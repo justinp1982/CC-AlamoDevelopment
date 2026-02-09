@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alamo Development Enterprises | DFW Roofing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --alamo-lime: #84cc16;
+            --alamo-black: #0a0a0a;
+            --alamo-dark: #171717;
+        }
+        body { font-family: 'Roboto', sans-serif; background-color: var(--alamo-black); color: #f5f5f5; }
+        .font-heading { font-family: 'Oswald', sans-serif; }
+        
+        /* JSS-style custom classes */
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(10,10,10,0.8), var(--alamo-black));
+        }
+        .btn-primary {
+            background-color: var(--alamo-lime);
+            color: var(--alamo-black);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #65a30d;
+            transform: scale(1.05);
+        }
+        .input-field {
+            background-color: var(--alamo-black);
+            border: 1px solid #262626;
+            transition: border-color 0.3s;
+        }
+        .input-field:focus {
+            border-color: var(--alamo-lime);
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="fixed w-full z-50 bg-black/90 border-b border-zinc-800 backdrop-blur-md h-24 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
+            <div class="font-heading text-2xl font-bold text-[#84cc16]">ALAMO DEVELOPMENT</div>
+            <a href="#contact" class="btn-primary px-6 py-2 rounded font-bold uppercase text-sm">Get a Quote</a>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 -z-10">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div class="max-w-4xl">
+            <h1 class="font-heading text-5xl md:text-7xl font-bold mb-6 uppercase italic">
+                Solid Foundations.<br><span class="text-[#84cc16]">Superior Roofing.</span>
+            </h1>
+            <p class="text-xl text-zinc-400 mb-10">Serving the entire DFW Metroplex with industrial-grade solutions.</p>
+            <a href="#contact" class="btn-primary px-10 py-4 rounded font-bold text-lg uppercase inline-flex items-center gap-2">
+                Start Your Project <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="contact" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="font-heading text-4xl font-bold mb-6 uppercase">Let's Build <span class="text-[#84cc16]">Something Great</span></h2>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4"><i data-lucide="phone" class="text-[#84cc16]"></i> 469-782-7495</div>
+                    <div class="flex items-center gap-4"><i data-lucide="mail" class="text-[#84cc16]"></i> AlamoDevelopmentEnterprises@Gmail.com</div>
+                </div>
+            </div>
+            <div class="bg-[#171717] p-8 rounded-lg border border-zinc-800">
+                <form class="space-y-4">
+                    <input type="tel" placeholder="Phone Number" class="input-field w-full p-3 rounded text-white">
+                    <textarea placeholder="Tell us about your project..." rows="4" class="input-field w-full p-3 rounded text-white"></textarea>
+                    <button class="btn-primary w-full py-4 rounded font-bold uppercase">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
