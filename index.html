@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Alamo Development Enterprises | DFW Roofing & Storm Restoration</title>
-    <meta name="title" content="Alamo Development Enterprises | DFW Roofing & Storm Restoration">
-    <meta name="description" content="Expert commercial TPO and residential roofing in Dallas-Fort Worth. Specialized in hail damage restoration and industrial construction. Licensed, insured, and DFW-local.">
+    <title>Alamo Development Enterprises | DFW Roofing & Construction Experts</title>
+    <meta name="title" content="Alamo Development Enterprises | DFW Roofing & Construction Experts">
+    <meta name="description" content="Premier roofing and construction services in the Dallas-Fort Worth area. Commercial and residential experts specializing in TPO and storm restoration.">
     <meta name="keywords" content="DFW Roofing, Dallas Roofing Contractor, TPO Roofing Dallas, Fort Worth Storm Restoration, Commercial Roofing Texas, Alamo Development Enterprises">
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.alamoroofingdfw.com/">
     <meta property="og:title" content="Alamo Development Enterprises | DFW Roofing Experts">
-    <meta property="og:description" content="Solid Foundations. Superior Roofing. Serving the entire DFW Metroplex with professional roofing solutions.">
+    <meta property="og:description" content="Solid Foundations. Superior Roofing. Serving the entire DFW Metroplex with professional construction solutions.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200">
 
     <script type="application/ld+json">
@@ -50,17 +50,31 @@
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <script src="https://unpkg.com/lucide@latest"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Roboto', 'sans-serif'], heading: ['Oswald', 'sans-serif'] },
-                    colors: { alamo: { black: '#0a0a0a', dark: '#171717', gray: '#262626', lime: '#84cc16', limehover: '#65a30d', white: '#f5f5f5' } }
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    },
+                    colors: {
+                        alamo: {
+                            black: '#0a0a0a',
+                            dark: '#171717',
+                            gray: '#262626',
+                            lime: '#84cc16',
+                            limehover: '#65a30d',
+                            white: '#f5f5f5'
+                        }
+                    }
                 }
             }
         }
@@ -72,7 +86,6 @@
         ::-webkit-scrollbar-thumb { background: #262626; border-radius: 5px; }
         ::-webkit-scrollbar-thumb:hover { background: #84cc16; }
         .text-outline { text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
-        .hero-gradient { background: linear-gradient(to bottom, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.6) 50%, #0a0a0a 100%); }
     </style>
 </head>
 <body class="bg-alamo-black text-alamo-white font-sans antialiased">
@@ -90,161 +103,239 @@
                         <span class="font-heading font-bold text-sm md:text-base leading-none tracking-[0.3em] text-white uppercase mt-1">Enterprises</span>
                     </div>
                 </div>
+                
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="text-gray-300 hover:text-alamo-lime transition font-medium">About</a>
                     <a href="#services" class="text-gray-300 hover:text-alamo-lime transition font-medium">Services</a>
-                    <a href="#contact" class="bg-alamo-lime hover:bg-alamo-limehover text-alamo-black px-6 py-2 rounded font-bold uppercase tracking-wide transition transform hover:scale-105">Get a Quote</a>
+                    <a href="#contact" class="bg-alamo-lime hover:bg-alamo-limehover text-alamo-black px-6 py-2 rounded font-bold uppercase tracking-wide transition transform hover:scale-105">
+                        Get a Quote
+                    </a>
                 </div>
+
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white" aria-label="Toggle Menu">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white">
                         <i data-lucide="menu" class="h-8 w-8"></i>
                     </button>
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-alamo-dark border-t border-alamo-gray p-4 space-y-4">
-            <a href="#about" class="block text-lg text-gray-300">About Us</a>
-            <a href="#services" class="block text-lg text-gray-300">Services</a>
-            <a href="#contact" class="block text-lg text-alamo-lime font-bold">Request Quote</a>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-alamo-dark border-t border-alamo-gray shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-alamo-gray">About Us</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-alamo-gray">Services</a>
+                <a href="#contact" class="block px-3 py-2 text-alamo-lime font-bold">Request Quote</a>
+            </div>
         </div>
     </nav>
 
     <header class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=80" alt="DFW Roofing Site" class="w-full h-full object-cover">
-            <div class="absolute inset-0 hero-gradient"></div>
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=80" 
+                 alt="DFW Roofing Construction Site" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-alamo-black/80 via-alamo-black/60 to-alamo-black"></div>
         </div>
+
         <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
             <div class="inline-flex items-center gap-2 bg-alamo-lime/10 border border-alamo-lime/30 px-4 py-1 rounded-full mb-6">
                 <span class="w-2 h-2 rounded-full bg-alamo-lime animate-pulse"></span>
-                <span class="text-alamo-lime text-sm font-bold tracking-wide uppercase">DFW Metroplex Roofing Experts</span>
+                <span class="text-alamo-lime text-sm font-bold tracking-wide uppercase">Serving the Entire DFW Metroplex</span>
             </div>
             <h1 class="font-heading text-5xl md:text-7xl font-bold text-white mb-6 uppercase leading-tight text-outline">
-                Solid Foundations.<br><span class="text-alamo-lime">Superior Roofing.</span>
+                Solid Foundations.<br>
+                <span class="text-alamo-lime">Superior Roofing.</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light">
-                Industrial-grade TPO and residential storm restoration for North Texas.
+                Alamo Development Enterprises delivers industrial-grade construction and roofing solutions for commercial and residential properties across Texas.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#contact" class="bg-alamo-lime text-alamo-black font-bold py-4 px-10 rounded hover:bg-alamo-limehover transition duration-300 text-lg uppercase tracking-wider flex items-center justify-center gap-2">
-                    Request Free Estimate <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                <a href="#contact" class="bg-alamo-lime text-alamo-black font-bold py-4 px-8 rounded hover:bg-alamo-limehover transition duration-300 text-lg uppercase tracking-wider flex items-center justify-center gap-2">
+                    Start Your Project <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <a href="#services" class="border border-white/30 hover:border-alamo-lime hover:text-alamo-lime text-white font-bold py-4 px-8 rounded bg-alamo-black/50 hover:bg-alamo-black transition duration-300 text-lg uppercase tracking-wider backdrop-blur-sm">
+                    View Services
                 </a>
             </div>
         </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-lucide="chevron-down" class="text-alamo-lime w-10 h-10"></i>
+        </div>
     </header>
 
+    <section class="bg-alamo-gray border-y border-white/5 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <p class="text-4xl font-heading font-bold text-alamo-lime mb-2">10+</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">Years Experience</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-4xl font-heading font-bold text-alamo-lime mb-2">200+</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">Projects Completed</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-4xl font-heading font-bold text-alamo-lime mb-2">100%</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">Satisfaction</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-4xl font-heading font-bold text-alamo-lime mb-2">A+</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">BBB Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="about" class="py-24 bg-alamo-black">
-        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
-            <div class="relative">
-                <div class="aspect-square rounded-lg overflow-hidden border border-alamo-gray shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1635416638423-74070a93130e?auto=format&fit=crop&w=800&q=80" alt="Roofing Team on Job Site" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="aspect-square rounded-lg overflow-hidden border border-alamo-gray shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1635416638423-74070a93130e?auto=format&fit=crop&w=800&q=80" alt="Roofing Team" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-alamo-lime p-8 rounded-lg shadow-xl hidden md:block">
+                        <p class="font-heading text-4xl font-bold text-alamo-black leading-none">10+</p>
+                        <p class="text-alamo-black font-bold uppercase text-xs tracking-tighter">Years in Texas</p>
+                    </div>
                 </div>
-                <div class="absolute -bottom-6 -right-6 bg-alamo-lime p-8 rounded-lg shadow-xl hidden md:block text-alamo-black">
-                    <p class="font-heading text-4xl font-bold leading-none">10+</p>
-                    <p class="font-bold uppercase text-xs tracking-tighter">Years in Texas</p>
-                </div>
-            </div>
-            <div>
-                <h2 class="font-heading text-4xl md:text-5xl font-bold text-white uppercase mb-6 italic">A Legacy of <span class="text-alamo-lime uppercase">Integrity</span></h2>
-                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-                    Alamo Development Enterprises understands North Texas weather. We provide lasting peace of mind through quality materials and direct leadership oversight.
-                </p>
-                <div class="space-y-6">
-                    <div class="flex gap-4 items-start"><i data-lucide="shield-check" class="text-alamo-lime mt-1"></i><div><h4 class="text-white font-bold uppercase">Fully Licensed & Insured</h4><p class="text-sm text-gray-500">Protecting your investment with full liability coverage.</p></div></div>
-                    <div class="flex gap-4 items-start"><i data-lucide="map-pin" class="text-alamo-lime mt-1"></i><div><h4 class="text-white font-bold uppercase">DFW Local</h4><p class="text-sm text-gray-500">Fast response for storm damage in Dallas, Plano, and Frisco.</p></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="py-24 bg-alamo-dark">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="font-heading text-4xl md:text-5xl font-bold text-white uppercase">Our <span class="text-alamo-lime text-outline">Specialties</span></h2>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-alamo-black p-8 rounded-lg border border-alamo-gray hover:border-alamo-lime transition group shadow-lg">
-                    <i data-lucide="building-2" class="text-alamo-lime mb-6 w-12 h-12"></i>
-                    <h3 class="font-heading text-2xl font-bold text-white mb-4 uppercase">Commercial Roofing</h3>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 text-alamo-lime"></i> TPO, EPDM & Flat Systems</li>
-                        <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 text-alamo-lime"></i> Industrial Coatings</li>
-                    </ul>
-                </div>
-                <div class="bg-alamo-black p-8 rounded-lg border border-alamo-gray hover:border-alamo-lime transition group shadow-lg">
-                    <i data-lucide="home" class="text-alamo-lime mb-6 w-12 h-12"></i>
-                    <h3 class="font-heading text-2xl font-bold text-white mb-4 uppercase">Residential Roofing</h3>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 text-alamo-lime"></i> Hail Damage Restoration</li>
-                        <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 text-alamo-lime"></i> High-Impact Shingles</li>
-                    </ul>
+                <div>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-white uppercase mb-6">A Legacy of <span class="text-alamo-lime uppercase">Integrity</span></h2>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed italic">
+                        Alamo Development Enterprises understands North Texas weather. We don't just fix roofs—we provide lasting peace of mind.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex gap-4 items-start"><i data-lucide="shield-check" class="text-alamo-lime mt-1"></i><div><h4 class="text-white font-bold uppercase">Fully Licensed & Insured</h4><p class="text-sm text-gray-500">Comprehensive liability and workers' comp coverage.</p></div></div>
+                        <div class="flex gap-4 items-start"><i data-lucide="map-pin" class="text-alamo-lime mt-1"></i><div><h4 class="text-white font-bold uppercase">DFW Local</h4><p class="text-sm text-gray-500">Fast response for Dallas, Plano, Frisco, and Fort Worth.</p></div></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="bg-alamo-black pt-24 border-t border-alamo-gray pb-12">
-        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16">
-            <div>
-                <h2 class="font-heading text-4xl font-bold text-white mb-6 uppercase italic">Start Your <span class="text-alamo-lime">Quote</span></h2>
-                <div class="space-y-8 text-gray-300">
-                    <div class="flex gap-4"><i data-lucide="phone" class="text-alamo-lime"></i><div><p class="font-bold text-white uppercase text-sm">Call DFW Office</p><a href="tel:4697827495" class="text-lg">469-782-7495</a></div></div>
-                    <div class="flex gap-4"><i data-lucide="mail" class="text-alamo-lime"></i><div><p class="font-bold text-white uppercase text-sm">Email Us</p><p class="text-lg">AlamoDevelopmentEnterprises@Gmail.com</p></div></div>
-                </div>
+    <section id="services" class="py-24 bg-alamo-dark border-y border-alamo-gray/30">
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h2 class="font-heading text-4xl md:text-5xl font-bold text-white uppercase">Our <span class="text-alamo-lime">Expertise</span></h2>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+            <div class="bg-alamo-black p-8 rounded-lg border border-alamo-gray hover:border-alamo-lime transition group">
+                <i data-lucide="building-2" class="text-alamo-lime mb-6 w-12 h-12"></i>
+                <h3 class="font-heading text-2xl font-bold text-white mb-4 uppercase">Commercial Roofing</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 text-alamo-lime"></i> TPO, EPDM & Flat Systems</li>
+                    <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 text-alamo-lime"></i> Metal Panels & Industrial Coatings</li>
+                </ul>
             </div>
-            <div class="bg-alamo-dark p-8 rounded-lg border border-alamo-gray shadow-2xl">
-                <form id="quote-form" class="space-y-4">
-                    <input type="text" id="user_name" placeholder="Full Name" class="w-full bg-alamo-black border border-alamo-gray rounded p-4 text-white focus:border-alamo-lime outline-none" required>
-                    <input type="tel" id="user_phone" placeholder="Phone Number" class="w-full bg-alamo-black border border-alamo-gray rounded p-4 text-white focus:border-alamo-lime outline-none" required>
-                    <textarea rows="4" id="user_message" placeholder="Project Details..." class="w-full bg-alamo-black border border-alamo-gray rounded p-4 text-white focus:border-alamo-lime outline-none" required></textarea>
-                    <button type="submit" class="w-full bg-alamo-lime text-alamo-black font-bold py-4 rounded hover:bg-alamo-limehover transition uppercase tracking-widest">Submit Estimate Request</button>
-                </form>
+            <div class="bg-alamo-black p-8 rounded-lg border border-alamo-gray hover:border-alamo-lime transition group">
+                <i data-lucide="home" class="text-alamo-lime mb-6 w-12 h-12"></i>
+                <h3 class="font-heading text-2xl font-bold text-white mb-4 uppercase">Residential Roofing</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 text-alamo-lime"></i> Hail Damage & Storm Restoration</li>
+                    <li class="flex gap-2"><i data-lucide="check" class="w-5 h-5 text-alamo-lime"></i> High-Impact Premium Shingles</li>
+                </ul>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 mt-24 text-center border-t border-alamo-gray pt-12">
-            <h5 class="text-xs uppercase tracking-widest text-gray-500 mb-4 font-bold">Service Areas</h5>
-            <div class="flex flex-wrap justify-center gap-4 text-xs text-gray-400 italic">
+    </section>
+
+    <section id="contact" class="bg-alamo-black pt-20 border-t border-alamo-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="font-heading text-4xl font-bold text-white mb-6 uppercase">Let's Build <span class="text-alamo-lime">Something Great</span></h2>
+                    <p class="text-gray-400 mb-8 text-lg">Alamo Development Enterprises is your trusted partner for roofing and construction.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-alamo-gray p-3 rounded"><i data-lucide="phone" class="text-alamo-lime w-6 h-6"></i></div>
+                            <div><h4 class="text-white font-bold text-lg uppercase">Call Us</h4><p class="text-gray-400"><a href="tel:469-782-7495" class="hover:text-alamo-lime transition">469-782-7495</a></p></div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-alamo-gray p-3 rounded"><i data-lucide="mail" class="text-alamo-lime w-6 h-6"></i></div>
+                            <div><h4 class="text-white font-bold text-lg uppercase">Email Us</h4><p class="text-gray-400 break-all">AlamoDevelopmentEnterprises@Gmail.com</p></div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-alamo-gray p-3 rounded"><i data-lucide="clock" class="text-alamo-lime w-6 h-6"></i></div>
+                            <div><h4 class="text-white font-bold text-lg uppercase">Hours</h4><p class="text-gray-400 text-sm">Mon - Sat: 7:00 AM - 7:00 PM<br>Sun: Closed</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-alamo-dark p-8 rounded-lg border border-alamo-gray shadow-2xl">
+                    <h3 class="text-2xl font-heading font-bold text-white mb-6 uppercase italic">Request a Free Estimate</h3>
+                    <form id="quote-form" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-400 text-xs font-bold uppercase mb-2">First Name</label>
+                                <input type="text" class="w-full bg-alamo-black border border-alamo-gray rounded p-3 text-white focus:outline-none focus:border-alamo-lime transition" placeholder="John" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-400 text-xs font-bold uppercase mb-2">Last Name</label>
+                                <input type="text" class="w-full bg-alamo-black border border-alamo-gray rounded p-3 text-white focus:outline-none focus:border-alamo-lime transition" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 text-xs font-bold uppercase mb-2">Phone Number</label>
+                            <input type="tel" class="w-full bg-alamo-black border border-alamo-gray rounded p-3 text-white focus:outline-none focus:border-alamo-lime transition" placeholder="469-782-7495" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 text-xs font-bold uppercase mb-2">Service Needed</label>
+                            <select class="w-full bg-alamo-black border border-alamo-gray rounded p-3 text-white focus:outline-none focus:border-alamo-lime transition">
+                                <option>Residential Roofing</option>
+                                <option>Commercial Roofing</option>
+                                <option>Storm Restoration</option>
+                                <option>General Construction</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 text-xs font-bold uppercase mb-2">Message</label>
+                            <textarea rows="4" class="w-full bg-alamo-black border border-alamo-gray rounded p-3 text-white focus:outline-none focus:border-alamo-lime transition" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-alamo-lime text-alamo-black font-bold py-4 rounded hover:bg-alamo-limehover transition uppercase tracking-widest">
+                            Submit Quote Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 text-center mt-12 border-t border-alamo-gray pt-12 pb-12">
+            <h5 class="text-xs uppercase tracking-widest text-gray-600 mb-4 font-bold">Serving DFW Local Communities</h5>
+            <div class="flex flex-wrap justify-center gap-4 text-[10px] text-gray-500 uppercase tracking-tighter">
                 <span>Dallas</span> • <span>Fort Worth</span> • <span>Arlington</span> • <span>Plano</span> • <span>Frisco</span> • <span>Irving</span> • <span>Richardson</span> • <span>Grapevine</span> • <span>McKinney</span>
             </div>
         </div>
-        <div class="mt-12 text-center text-gray-600 text-xs">
-            <p>&copy; 2026 Alamo Development Enterprises. North Texas Roofing & Construction.</p>
+
+        <div class="bg-black py-6 border-t border-alamo-gray/50 text-center">
+            <p class="text-[10px] text-gray-600 uppercase tracking-widest">
+                &copy; 2026 Alamo Development Enterprises. All rights reserved. North Texas Roofing & Construction.
+            </p>
         </div>
     </section>
 
     <script>
-        // Initialize Icons
         lucide.createIcons();
 
-        // Mobile Menu Toggle
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click', () => menu.classList.toggle('hidden'));
 
-        // Form Logic & Pixel Tracking
+        // Pixel/Lead Tracking (Non-Functional Placeholder)
         const quoteForm = document.getElementById('quote-form');
         quoteForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
-            // META PIXEL TRACKING (NON-FUNCTIONAL UNTIL PIXEL IS LOADED)
-            /* if (typeof fbq === "function") {
-                fbq('track', 'Lead');
-            } 
-            */
-
-            alert('Thank you! Your estimate request for Alamo Development has been received.');
+            // fbq('track', 'Lead'); 
+            alert('Thank you! Your quote request for Alamo Development has been received.');
             quoteForm.reset();
         });
 
-        // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 menu.classList.add('hidden');
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
 </body>
 </html>
-
