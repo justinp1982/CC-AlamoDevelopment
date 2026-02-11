@@ -316,7 +316,7 @@
                 <div class="bg-alamo-dark p-8 rounded-lg border border-alamo-gray shadow-2xl">
                     <h3 class="text-2xl font-heading font-bold text-white mb-6 uppercase italic">Request a Free Estimate</h3>
                     
-                    <form action="https://formspree.io/f/xreabpdr" method="POST" class="space-y-4">
+                    <form id="contact-form" action="https://formspree.io/f/xreabpdr" method="POST" class="space-y-4">
                         
                         <input type="hidden" name="_next" value="https://alamoroofingdfw.com/thanks.html"> 
                 
@@ -375,28 +375,78 @@
         </div>
     </section>
 
-    <script>
+   <script>
         // Initialize Icons
         lucide.createIcons();
-
+    
         // Mobile Menu Toggle
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-        // Smooth Scroll Logic for anchor links
+    
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    
+        // Smooth Scroll Logic
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                menu.classList.add('hidden'); // Close mobile menu if open
+                if(menu) menu.classList.add('hidden'); 
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
         });
+    
+        // FORCE REDIRECT FORM SCRIPT
+        const form = document.getElementById("contact-form");
+        
+        async function handleSubmit(event) {
+            event.preventDefault(); // Stop standard redirect
+            const status = document.createElement('p'); // Create status text
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            
+            // Change button text to show loading
+            btn.innerText = "Sending...";
+            btn.disabled = true;
+    
+            const data = new FormData(event.target);
+    
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // SUCCESS: Manually redirect to your page
+                    window.location.href = "https://www.alamoroofingdfw.com/thanks.html";
+                } else {
+                    // ERROR
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            alert(data["errors"].map(error => error["message"]).join(", "));
+                        } else {
+                            alert("Oops! There was a problem submitting your form");
+                        }
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                    })
+                }
+            }).catch(error => {
+                alert("Oops! There was a problem submitting your form");
+                btn.innerText = originalText;
+                btn.disabled = false;
+            });
+        }
+    
+        if(form) {
+            form.addEventListener("submit", handleSubmit);
+        }
     </script>
 </body>
 </html>
